@@ -3,7 +3,7 @@
 
 def count_substring(text, sub):
     if len(text) < len(sub):
-        return 0
+        return None
 
     if text.startswith(sub):
         return 1 + count_substring(text[len(sub):], sub)
